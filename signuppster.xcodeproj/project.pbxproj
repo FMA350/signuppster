@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08697AFF225E28E4002829A5 /* controllersCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08697AFE225E28E4002829A5 /* controllersCommons.swift */; };
+		08697B01225F4FBA002829A5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08697B00225F4FBA002829A5 /* Validator.swift */; };
 		08DDC539225CCE9D00ECE14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC538225CCE9D00ECE14A /* AppDelegate.swift */; };
-		08DDC53B225CCE9D00ECE14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC53A225CCE9D00ECE14A /* ViewController.swift */; };
+		08DDC53B225CCE9D00ECE14A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC53A225CCE9D00ECE14A /* LoginViewController.swift */; };
 		08DDC53E225CCE9D00ECE14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DDC53C225CCE9D00ECE14A /* Main.storyboard */; };
 		08DDC540225CCE9E00ECE14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DDC53F225CCE9E00ECE14A /* Assets.xcassets */; };
 		08DDC543225CCE9E00ECE14A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DDC541225CCE9E00ECE14A /* LaunchScreen.storyboard */; };
+		08DDC54F225CDD9300ECE14A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC54E225CDD9300ECE14A /* SignupViewController.swift */; };
+		08DDC551225CDDF300ECE14A /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC550225CDDF300ECE14A /* InputField.swift */; };
+		08DDC553225CE46D00ECE14A /* UI_CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC552225CE46D00ECE14A /* UI_CONSTANTS.swift */; };
+		317A081C9AECE9917844307D /* Pods_signuppster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8F5C14E1F2E43C603A08CC /* Pods_signuppster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08697AFE225E28E4002829A5 /* controllersCommons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllersCommons.swift; sourceTree = "<group>"; };
+		08697B00225F4FBA002829A5 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		08DDC535225CCE9D00ECE14A /* signuppster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = signuppster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DDC538225CCE9D00ECE14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08DDC53A225CCE9D00ECE14A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08DDC53A225CCE9D00ECE14A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		08DDC53D225CCE9D00ECE14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08DDC53F225CCE9E00ECE14A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08DDC542225CCE9E00ECE14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08DDC544225CCE9E00ECE14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DDC54E225CDD9300ECE14A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		08DDC550225CDDF300ECE14A /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		08DDC552225CE46D00ECE14A /* UI_CONSTANTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_CONSTANTS.swift; sourceTree = "<group>"; };
+		1ED080D3389098738F0FBE8D /* Pods-signuppster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signuppster.debug.xcconfig"; path = "Target Support Files/Pods-signuppster/Pods-signuppster.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8F5C14E1F2E43C603A08CC /* Pods_signuppster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_signuppster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE65158FFB42E03BD61066F9 /* Pods-signuppster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signuppster.release.xcconfig"; path = "Target Support Files/Pods-signuppster/Pods-signuppster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317A081C9AECE9917844307D /* Pods_signuppster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				08DDC537225CCE9D00ECE14A /* signuppster */,
 				08DDC536225CCE9D00ECE14A /* Products */,
+				D4EFABE55F6A5A92D0803208 /* Pods */,
+				2ACEC671C9F27E9D235FB8C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,68 @@
 		08DDC537225CCE9D00ECE14A /* signuppster */ = {
 			isa = PBXGroup;
 			children = (
-				08DDC538225CCE9D00ECE14A /* AppDelegate.swift */,
-				08DDC53A225CCE9D00ECE14A /* ViewController.swift */,
-				08DDC53C225CCE9D00ECE14A /* Main.storyboard */,
-				08DDC53F225CCE9E00ECE14A /* Assets.xcassets */,
-				08DDC541225CCE9E00ECE14A /* LaunchScreen.storyboard */,
 				08DDC544225CCE9E00ECE14A /* Info.plist */,
+				08DDC54D225CD30E00ECE14A /* Additional Files */,
+				08DDC54C225CD30200ECE14A /* View */,
+				08DDC54B225CD2F400ECE14A /* Controller */,
+				08DDC54A225CD27200ECE14A /* Model */,
+				08DDC53F225CCE9E00ECE14A /* Assets.xcassets */,
 			);
 			path = signuppster;
+			sourceTree = "<group>";
+		};
+		08DDC54A225CD27200ECE14A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08DDC54B225CD2F400ECE14A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08DDC53A225CCE9D00ECE14A /* LoginViewController.swift */,
+				08DDC54E225CDD9300ECE14A /* SignupViewController.swift */,
+				08697AFE225E28E4002829A5 /* controllersCommons.swift */,
+				08697B00225F4FBA002829A5 /* Validator.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		08DDC54C225CD30200ECE14A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08DDC541225CCE9E00ECE14A /* LaunchScreen.storyboard */,
+				08DDC550225CDDF300ECE14A /* InputField.swift */,
+				08DDC53C225CCE9D00ECE14A /* Main.storyboard */,
+				08DDC552225CE46D00ECE14A /* UI_CONSTANTS.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08DDC54D225CD30E00ECE14A /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				08DDC538225CCE9D00ECE14A /* AppDelegate.swift */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
+		2ACEC671C9F27E9D235FB8C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F5C14E1F2E43C603A08CC /* Pods_signuppster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4EFABE55F6A5A92D0803208 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ED080D3389098738F0FBE8D /* Pods-signuppster.debug.xcconfig */,
+				CE65158FFB42E03BD61066F9 /* Pods-signuppster.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08DDC547225CCE9E00ECE14A /* Build configuration list for PBXNativeTarget "signuppster" */;
 			buildPhases = (
+				8717DAFDC1B3BE054CC9F546 /* [CP] Check Pods Manifest.lock */,
 				08DDC531225CCE9D00ECE14A /* Sources */,
 				08DDC532225CCE9D00ECE14A /* Frameworks */,
 				08DDC533225CCE9D00ECE14A /* Resources */,
+				D8255DCD9C2EDDFF3EE72404 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +203,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8717DAFDC1B3BE054CC9F546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-signuppster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8255DCD9C2EDDFF3EE72404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-signuppster/Pods-signuppster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-signuppster/Pods-signuppster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08DDC531225CCE9D00ECE14A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DDC53B225CCE9D00ECE14A /* ViewController.swift in Sources */,
+				08DDC553225CE46D00ECE14A /* UI_CONSTANTS.swift in Sources */,
+				08DDC54F225CDD9300ECE14A /* SignupViewController.swift in Sources */,
+				08697B01225F4FBA002829A5 /* Validator.swift in Sources */,
+				08DDC53B225CCE9D00ECE14A /* LoginViewController.swift in Sources */,
 				08DDC539225CCE9D00ECE14A /* AppDelegate.swift in Sources */,
+				08697AFF225E28E4002829A5 /* controllersCommons.swift in Sources */,
+				08DDC551225CDDF300ECE14A /* InputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +409,7 @@
 		};
 		08DDC548225CCE9E00ECE14A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED080D3389098738F0FBE8D /* Pods-signuppster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +428,7 @@
 		};
 		08DDC549225CCE9E00ECE14A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE65158FFB42E03BD61066F9 /* Pods-signuppster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
