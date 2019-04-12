@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		08697AFF225E28E4002829A5 /* controllersCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08697AFE225E28E4002829A5 /* controllersCommons.swift */; };
 		08697B01225F4FBA002829A5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08697B00225F4FBA002829A5 /* Validator.swift */; };
+		08C9918F2260862800D625FA /* SignUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C9918E2260862800D625FA /* SignUserData.swift */; };
+		08C991912260883600D625FA /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C991902260883600D625FA /* IO.swift */; };
 		08DDC539225CCE9D00ECE14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC538225CCE9D00ECE14A /* AppDelegate.swift */; };
 		08DDC53B225CCE9D00ECE14A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDC53A225CCE9D00ECE14A /* LoginViewController.swift */; };
 		08DDC53E225CCE9D00ECE14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DDC53C225CCE9D00ECE14A /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		08697AFE225E28E4002829A5 /* controllersCommons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllersCommons.swift; sourceTree = "<group>"; };
 		08697B00225F4FBA002829A5 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		08C9918E2260862800D625FA /* SignUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUserData.swift; sourceTree = "<group>"; };
+		08C991902260883600D625FA /* IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
 		08DDC535225CCE9D00ECE14A /* signuppster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = signuppster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DDC538225CCE9D00ECE14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DDC53A225CCE9D00ECE14A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		08DDC54A225CD27200ECE14A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				08C9918E2260862800D625FA /* SignUserData.swift */,
+				08C991902260883600D625FA /* IO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,10 +268,12 @@
 				08DDC553225CE46D00ECE14A /* UI_CONSTANTS.swift in Sources */,
 				08DDC54F225CDD9300ECE14A /* SignupViewController.swift in Sources */,
 				08697B01225F4FBA002829A5 /* Validator.swift in Sources */,
+				08C991912260883600D625FA /* IO.swift in Sources */,
 				08DDC53B225CCE9D00ECE14A /* LoginViewController.swift in Sources */,
 				08DDC539225CCE9D00ECE14A /* AppDelegate.swift in Sources */,
 				08697AFF225E28E4002829A5 /* controllersCommons.swift in Sources */,
 				08DDC551225CDDF300ECE14A /* InputField.swift in Sources */,
+				08C9918F2260862800D625FA /* SignUserData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

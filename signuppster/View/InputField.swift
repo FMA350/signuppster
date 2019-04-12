@@ -129,8 +129,11 @@ class InputField: UIView, UITextFieldDelegate{
         return errorMessage
     }
     
-    func getTextValue() -> String?{
-        return textField.text
+    func getTextValue() -> String{
+        guard let t = textField.text else{
+            return ""
+        }
+        return t
     }
     
     func setErrorBorder(){

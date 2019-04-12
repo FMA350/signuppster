@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 import CoreGraphics
 
 class LoginViewController: UIViewController, sign {
@@ -15,6 +16,7 @@ class LoginViewController: UIViewController, sign {
     var emailView : InputField =  InputField()
     var passwordView : InputField = InputField()
     var headerLogo : UIImageView = UIImageView()
+    var signInButton : UIButton = UIButton(type: .system)
     var toSignUpButton : UIButton = UIButton(type: .system)
     
     let HEADER_IMAGE_NAME : String = "login.png"
@@ -30,9 +32,10 @@ class LoginViewController: UIViewController, sign {
     }
     
     func addSubviews(){
+        self.view.addSubview(headerLogo)
         self.view.addSubview(emailView)
         self.view.addSubview(passwordView)
-        self.view.addSubview(headerLogo)
+        self.view.addSubview(signInButton)
         self.view.addSubview(toSignUpButton)
     }
     
@@ -57,6 +60,8 @@ class LoginViewController: UIViewController, sign {
         inputFrame = inputFrame.offsetBy(dx: 0, dy: inputInputOffsetY)
         passwordView.frame = inputFrame
         inputFrame = inputFrame.offsetBy(dx: 0, dy: inputInputOffsetY)
+        signInButton.frame = inputFrame
+        inputFrame = inputFrame.offsetBy(dx: 0, dy: inputInputOffsetY)
         toSignUpButton.frame = inputFrame
     }
     
@@ -65,14 +70,50 @@ class LoginViewController: UIViewController, sign {
         let image : UIImage = UIImage(named: HEADER_IMAGE_NAME)!;
         headerLogo.image = image
         //of email input field
-        emailView.setProperties( imageName:"userunknown.png", placeholder: "Your Email", isPassword: false, keyboardType: .emailAddress, validatorType: .initDefault)
+        emailView.setProperties( imageName:"userunknown.png", placeholder: "Your Email", isPassword: false, keyboardType: .emailAddress, validatorType: .email)
         //of password input field
         passwordView.setProperties( imageName: "password.png", placeholder: "Your Password", isPassword:true, keyboardType: .emailAddress, validatorType: .initDefault)
-        //of button
+        //of buttons
+        signInButton.setTitle("Sing in!", for: .normal)
+        signInButton.addTarget(self, action: #selector(signIn), for: .touchUpInside)
+        
         toSignUpButton.setTitle("Don't have an account yet? Sign Up!", for: .normal)
         toSignUpButton.addTarget(self, action: #selector(toSignUp), for: .touchUpInside)
         
     }
+    
+@objc func signIn(){
+    if emailView.isValidated(){
+        do{
+            let data = try IO.loadUserData(key: emailView.getTextValue())
+            if(data.password == passwordView.getTextValue()){
+                let popup = PopupDialog(title: "Welcome back", message: "Welcome back \(data.username)")
+                self.present(popup, animated: true, completion: nil)
+            }
+            else{
+                showErrorPopup()
+            }
+        }
+        catch IOError.wrongKey{
+            //user has wrong email
+            showErrorPopup()
+        }
+        catch{
+            //other error
+            showErrorPopup()
+        }
+    }
+    else{
+        showErrorPopup()
+    }
+}
+
+    
+func showErrorPopup(){
+        let popup = PopupDialog(title: "Houston! We have a problem!", message: "Email or password is incorrect")
+        self.present(popup, animated: true, completion: nil)
+    }
+    
     
     
  @objc func toSignUp(){

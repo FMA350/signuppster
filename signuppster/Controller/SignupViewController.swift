@@ -10,6 +10,8 @@ import UIKit
 import CoreGraphics
 import PopupDialog
 
+
+
 class SignupViewController: UIViewController, sign {
     var headerLogo : UIImageView = UIImageView()
     
@@ -124,7 +126,6 @@ class SignupViewController: UIViewController, sign {
     
     func signupValidation(){
         //let's check that every field has been validated at the InputFieldLevel
-        let popup : PopupDialog
         var message : String = ""
         if !usernameField.isValidated(){
             if let msg = usernameField.getValidationMessage(){
@@ -150,6 +151,9 @@ class SignupViewController: UIViewController, sign {
             }
             else{//field is untouched
                 password1Field.setErrorBorder()
+                password2Field.setErrorBorder()
+                //need to set password2Field error as well, else it won't be triggered
+                //since the 2 fields are the same (empty)
                 message += "The password field is empty!\n"
             }
         }
@@ -160,7 +164,7 @@ class SignupViewController: UIViewController, sign {
         if message.count > 0{
             //BUG: Image appears way too big and pixelated
             //let image = UIImage(named: "astronaut.png")
-            popup = PopupDialog(title: "Houston! We have a problem", message: message)
+            let popup = PopupDialog(title: "Houston! We have a problem!", message: message)
             self.present(popup, animated: true, completion: nil)
         }
 
@@ -169,7 +173,21 @@ class SignupViewController: UIViewController, sign {
     @objc func signup(){
         signupValidation()
         //TODO
+        let data : SignUserData = SignUserData(username: usernameField.getTextValue(), email: emailField.getTextValue(), password: password1Field.getTextValue(), gender: Int(genderSlider.value))
         //call model function for saving data
+        do{
+           try IO.saveUserData(data: data)
+            let popup = PopupDialog(title: "Hurray!", message: "You correctly registered!")
+            self.present(popup, animated: true, completion: nil)
+            
+        }catch IOError.encoding{
+            let popup = PopupDialog(title: "Houston! We have a problem!", message: "We could not save your data!")
+            self.present(popup, animated: true, completion: nil)
+        }
+        catch{
+            let popup = PopupDialog(title: "Houston! We have a problem!", message: "A misterious error has occured, our wizards are on it!")
+            self.present(popup, animated: true, completion: nil)
+        }
     }
     
     @objc func sliderMoved(){
